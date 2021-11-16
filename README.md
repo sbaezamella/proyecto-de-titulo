@@ -32,7 +32,8 @@ Este código fuente corresponde a la propuesta para el Proyecto de Título
 En `Environment`
 
 ```text
-game = space_invaders 
+[Environment]
+game = space_invaders
 folder_name = space-invaders
 n_objects = 6
 ```
