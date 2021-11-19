@@ -149,5 +149,4 @@ cython_debug/
 .history
 .ionide
 
-tensorboard
-models
+gamma*/
