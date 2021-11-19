@@ -1,3 +1,5 @@
+import imageio
+import numpy as np
 from stable_baselines3 import PPO
 from stable_baselines3.common.env_util import make_vec_env
 
@@ -17,7 +19,7 @@ def main():
 
     obs = env.reset()
     env.render()
-    for _ in range(3000):
+    while True:
         action, _ = trained_model.predict(obs)
         obs, _, _, _ = env.step(action)
         env.render()
